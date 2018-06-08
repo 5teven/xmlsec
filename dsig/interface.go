@@ -14,6 +14,7 @@ var (
 	Enveloped = TransformID(clib.Enveloped)
 	Sha1      = TransformID(clib.Sha1)
 	RsaSha1   = TransformID(clib.RsaSha1)
+	Gost2001  = TransformID(clib.Gost2001)
 )
 
 type Ctx struct {
