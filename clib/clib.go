@@ -168,6 +168,7 @@ var (
 	Sha1      = TransformID{ptr: C.MY_Sha1Id()}
 	RsaSha1   = TransformID{ptr: C.MY_RsaSha1Id()}
 	Gost2001  = TransformID{ptr: C.xmlSecTransformGost2001GostR3411_94GetKlass()}
+)
 
 // XMLSecInit initializes xmlsec by calling the various initilizers.
 // Currently it sets up libxslt to disable interaction with the
