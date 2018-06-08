@@ -93,7 +93,7 @@ static inline xmlSecTransformId MY_RsaSha1Id() {
 }
 
 static inline xmlSecTransformId MY_GostID() {
-	return xmlSecOpenSSLTransformGost2001GostR3411_94Id;
+	return xmlSecTransformGost2001GostR3411_94Id;
 }
 
 static int
