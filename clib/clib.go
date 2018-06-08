@@ -92,8 +92,8 @@ static inline xmlSecTransformId MY_RsaSha1Id() {
 	return xmlSecTransformRsaSha1Id;
 }
 
-static inline xmlSecTransformId xmlSecKeyDataGost2001GetKlass() {
-	return xmlSecKeyDataId;
+static inline xmlSecTransformId xmlSecTransformGost2001GostR3411_94GetKlass() {
+	return xmlSecTransformGost2001GostR3411_94Id;
 }
 
 static int
@@ -167,7 +167,7 @@ var (
 	InclC14N  = TransformID{ptr: C.xmlSecTransformInclC14NGetKlass()}
 	Sha1      = TransformID{ptr: C.MY_Sha1Id()}
 	RsaSha1   = TransformID{ptr: C.MY_RsaSha1Id()}
-	Gost2001  = TransformID{ptr: C.xmlSecKeyDataGost2001GetKlass()}
+	Gost2001  = TransformID{ptr: C.xmlSecTransformGost2001GostR3411_94GetKlass()}
 
 // XMLSecInit initializes xmlsec by calling the various initilizers.
 // Currently it sets up libxslt to disable interaction with the
