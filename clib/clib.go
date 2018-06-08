@@ -92,10 +92,6 @@ static inline xmlSecTransformId MY_RsaSha1Id() {
 	return xmlSecTransformRsaSha1Id;
 }
 
-static inline xmlSecTransformId MY_GostID() {
-	return xmlSecTransformGost2001GostR3411_94Id;
-}
-
 static int
 go_xmlsec_key_has_X509(xmlSecKey *key) {
 	xmlSecKeyDataPtr data = xmlSecKeyGetData(key, xmlSecKeyDataX509Id);
@@ -167,7 +163,7 @@ var (
 	InclC14N  = TransformID{ptr: C.xmlSecTransformInclC14NGetKlass()}
 	Sha1      = TransformID{ptr: C.MY_Sha1Id()}
 	RsaSha1   = TransformID{ptr: C.MY_RsaSha1Id()}
-	Gost2001  = TransformID{ptr: C.MY_GostID()}
+	Gost2001  = TransformID{ptr: C.xmlSecTransformGost2001GostR3411_94GetKlass()}
 )
 
 // XMLSecInit initializes xmlsec by calling the various initilizers.
